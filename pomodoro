@@ -37,7 +37,7 @@ from threading import Thread
 
 
 def notify(text):
-    call(["notify-send", "Pomodoro", text])
+    call(["notify-send", "Deep work", text])
 
 
 def daemonize():
@@ -174,14 +174,11 @@ app = App(
     Pomodoro(
         Cycle(
             [
-                (25, "Working", "Time to start working!"),
-                (5, "Resting", "Time to start resting!"),
-                (25, "Working", "Time to start working!"),
-                (5, "Resting", "Time to start resting!"),
-                (25, "Working", "Time to start working!"),
-                (5, "Resting", "Time to start resting!"),
-                (25, "Working", "Time to start working!"),
-                (15, "Long Break", "Time to take some nap!"),
+                (52, "Working", "Time to start working!"),
+                (17, "Resting", "Time to start resting!"),
+                (52, "Working", "Time to start working!"),
+                (17, "Resting", "Time to start resting!"),
+                (30, "Break", "Take a good long break."),
             ]
         )
     )
